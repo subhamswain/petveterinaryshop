@@ -1,0 +1,102 @@
+.input input,
+.input select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 3%;
+  font-size: 1em;
+
+  border-width: 0 0 1px 0;
+  border-color: var(--grey);
+
+  outline: none;
+  box-sizing: border-box;
+}
+
+.input select {
+  -webkit-appearance: none;
+}
+
+.input input:focus {
+  border-color: var(--green-bg);
+}
+
+::-webkit-input-placeholder {
+  color: var(--light-mode-dark-text);
+}
+.password {
+  position: relative;
+}
+.password-off {
+  background: url("/icons/eye-on.svg") no-repeat;
+  background-position: 100% 50%;
+}
+.password-on {
+  background: url("/icons/eye-off.svg") no-repeat;
+  background-position: 100% 50%;
+}
+.password span {
+  position: absolute;
+  top: 8px;
+  right: 0px;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.password > span:active ~ .password > input {
+  background-color: aqua;
+}
+
+.button {
+  border: none;
+  outline: none;
+  color: var(--light-mode-light-text);
+  margin-bottom: 2%;
+  transition: 0.3s background-color ease-in;
+
+  padding: 15px;
+  text-align: center;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+}
+.button:hover {
+  background-color: var(--green-bg-hover);
+}
+.button:active {
+  transform: scale(0.99);
+}
+.home-link {
+  text-decoration: none;
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 2%;
+  display: flex;
+  align-items: center;
+}
+.home-link img {
+  margin-right: 10px;
+}
+.hovered {
+  animation: hovered 0.7s ease-in infinite;
+}
+@keyframes hovered {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(5px, 0);
+  }
+}
+@media only screen and (max-width: 650px) {
+  .input input,
+  .input select {
+    font-size: 0.8em;
+  }
+  .button {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+}

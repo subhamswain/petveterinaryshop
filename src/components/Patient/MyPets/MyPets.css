@@ -1,0 +1,15 @@
+.add-new-pet-form {
+  flex-direction: column;
+  height: 40vh;
+}
+.add-new-pet-form h2 {
+  margin-bottom: 5vh;
+}
+.pets-list-container {
+  flex-direction: column;
+}
+.pets-list {
+  overflow-y: scroll;
+  height: 80vh;
+  padding-right: 20px;
+}

@@ -1,0 +1,16 @@
+.list-of-clients {
+  overflow-y: scroll;
+  height: 70vh;
+  padding-right: 20px;
+}
+.search-bar {
+  border-width: 2px !important;
+  border-color: var(--dark-blue-bg) !important;
+  padding: 10px;
+  border-radius: 20px;
+}
+.pet-icon {
+  width: 25%;
+  border-radius: 10px;
+  padding: 10px;
+}

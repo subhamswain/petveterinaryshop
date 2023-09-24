@@ -1,0 +1,27 @@
+.client-item {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  border-top: 3px solid var(--dark-blue-bg);
+  margin-bottom: 20px;
+}
+.client-info {
+  margin-left: 2%;
+  border-left: 2px solid var(--green-bg);
+  padding-left: 10px;
+}
+.client-info p {
+  margin: 5px;
+}
+.client-item h4 {
+  margin: 5px;
+}
+@media only screen and (max-width: 650px) {
+  .client-info {
+    margin-left: 5%;
+  }
+  h4 {
+    font-size: 0.9rem;
+  }
+}
